@@ -43,7 +43,7 @@ public class CourseServiceTest{
         course.setCourseName(" Curso Prueb@");
         course.setDurationHours(0);
         boolean verify = courseService.isRightCourse( course );
-        assertEquals( verify, true );
+        assertEquals( verify, false );
     }
 
 }
