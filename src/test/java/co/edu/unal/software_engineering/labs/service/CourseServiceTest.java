@@ -36,4 +36,14 @@ public class CourseServiceTest{
 
     }
 
+    @Test
+    public void isRightCourseTest( ){
+        Course course = new Course();
+        course.setId(null);
+        course.setCourseName(" Curso Prueb@");
+        course.setDurationHours(0);
+        boolean verify = courseService.isRightCourse( course );
+        assertEquals( verify, false );
+    }
+
 }
